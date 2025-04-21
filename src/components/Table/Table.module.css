@@ -1,0 +1,30 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Themes */
+.default {
+  background-color: var(--table-bg-default);
+  color: var(--table-text-default);
+}
+
+.light {
+  background-color: var(--table-bg-light);
+  color: var(--table-text-light);
+}
+
+.dark {
+  background-color: var(--table-bg-dark);
+  color: var(--table-text-dark);
+}
+
+
+

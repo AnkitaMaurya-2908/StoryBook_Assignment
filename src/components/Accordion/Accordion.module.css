@@ -1,0 +1,52 @@
+/* Accordion.module.css */
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: var(--accordion-bg-header);
+  color: var(--accordion-text-header);
+  padding: 12px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  transition: background-color 0.3s;
+}
+
+.content {
+  background-color: var(--accordion-bg-content);
+  color: var(--accordion-text-content);
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Themes */
+.default {
+  --accordion-bg-header: #ccffcc; /* Light green */
+  --accordion-text-header: #000;
+  --accordion-bg-content: #f9f9f9;
+  --accordion-text-content: #000;
+}
+
+.light {
+  --accordion-bg-header: #ffffff; /* White */
+  --accordion-text-header: #000;
+  --accordion-bg-content: #f1f1f1;
+  --accordion-text-content: #000;
+}
+
+.dark {
+  --accordion-bg-header: #333333; /* Dark */
+  --accordion-text-header: #fff;
+  --accordion-bg-content: #222222;
+  --accordion-text-content: #fff;
+}

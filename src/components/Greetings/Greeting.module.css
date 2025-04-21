@@ -1,0 +1,7 @@
+/* src/components/Greeting/Greeting.module.css */
+
+.greeting {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}

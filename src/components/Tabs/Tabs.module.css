@@ -1,0 +1,55 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.tab-list {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.tab:focus-visible {
+  outline: 2px solid #007bff;
+}
+
+.tab[aria-selected="true"] {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.tab[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Theme styles */
+.default {
+  --tab-bg: #ccffcc;
+  --tab-text: #000;
+}
+
+.light {
+  --tab-bg: #fff;
+  --tab-text: #000;
+}
+
+.dark {
+  --tab-bg: #000;
+  --tab-text: #fff;
+}
+
+.tab,
+.tab-panel {
+  background-color: var(--tab-bg);
+  color: var(--tab-text);
+}

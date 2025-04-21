@@ -1,0 +1,11 @@
+:root {
+  --table-bg-default: #ccffcc;   /* Light green */
+  --table-text-default: #000000;
+
+  --table-bg-light: #ffffff;
+  --table-text-light: #000000;
+
+  --table-bg-dark: #000000;
+  --table-text-dark: #ffffff;
+}
+
